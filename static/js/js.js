@@ -2,7 +2,7 @@
     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/pose
 
     // the link to your model provided by Teachable Machine export panel
-    const URL = "./my_model/";
+    const URL = "../../static/js/my_model/";
     const toDoList=document.querySelector(".js-toDoList");
     const TODOS_LS = "toDos";    
     let model, webcam, ctx, labelContainer, maxPredictions;
@@ -11,7 +11,10 @@
     async function init() {
         const modelURL = URL + "model.json";
         const metadataURL = URL + "metadata.json";
-        alert('start');
+        console.log(modelURL);
+        alert('시작하겠습니다');
+        // alert('start');
+        
         // load the model and metadata
         // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
         // Note: the pose library adds a tmPose object to your window (window.tmPose)
@@ -83,7 +86,7 @@
             }
 
         for (let i = 0; i < maxPredictions; i++) {
-            const classPrediction =prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+            const classPrediction =prediction[i].className + "일 확률 " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
         }
 

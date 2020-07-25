@@ -1,6 +1,52 @@
 body{
-    background-color: #EE7417;
+    background-color: #D8D8D8;
 }
 .find{
-    background-color: #707070;
+    font-size: 30px;
+    background-color: #EE7417;
+    width : auto;
+    height: 60px;
+    padding-left : 50px;
+   
+}
+.find1{
+    background-color: #D8D8D8;
+    width : auto;
+    height: 50px;
+   
+}
+.mytown
+{
+    display: block;
+    padding: 10px;
+}
+
+li{
+    background-color: #EE7417;
+    text-align: center;
+    margin:5px;
+}
+
+.footer1{
+    background-color: black;
+    color: grey;
+    height: 100px;
+}
+
+.card {
+    box-sizing : border-box;
+    width: 50%;
+    height: 500px;
+    
+    /* radius 는 각을 둥글게 만들어줌 */
+    border-radius: 15px;
+    background-color: white;
+    
+    /* 그림자만들기 */
+    box-shadow: 10px 10px 5px grey;
+    
+    /* 위 왼 아래 오  */
+    margin-top: 50px;
+    /* 경계선과 컨텐츠 사이의 거리 */
+    padding-top: 150px;
 }

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/notice.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Account page </title>
+</head>
+
+<body>
+    <center>
+    <div class="card">
+    <img src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/961/%EB%A1%9C%EA%B3%A0.png" width="100px">
+    <br><br>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </form>
+    </div>
+    </center>
+</body>
+</html>
