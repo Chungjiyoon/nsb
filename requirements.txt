@@ -46,7 +46,7 @@ nbformat==5.0.7
 notebook==6.0.3
 packaging==20.4
 pandocfilters==1.4.2
-paramiko==2.7.1
+paramiko==2.10.1
 parso==0.7.0
 pathspec==0.5.9
 pexpect==4.8.0
